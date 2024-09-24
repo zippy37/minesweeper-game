@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Minesweeper</title>
+    </head>
+    <body>
+
+        <div class = "container">
+            <h1>Mines: <span id="mines-count">0</span></h1>
+        <div class = "game-window">
+            <div id="board">
+
+            </div> 
+            <div class = "buttons">
+                <button id="easy-button">Easy</button>
+                <button id="medium-button">Medium</button>
+                <button id="hard-button">Hard</button>
+                <button id="restart-button" class="hidden">New Game</button>
+                <button id="flag-button" class = "hidden">🚩</button>
+                <p class = "hidden" id="timer">Time: <span id="time">0</span></p>
+            </div>
+        </div>
+        <div class = instruction-div>
+        <p class = "instructions">Select a difficulty to begin.<br>
+            To mark a tile, click the flag 🚩 button, then click the tile you wish to mark.<br>
+            Right clicking also marks any tile of your choosing.<br>
+            Click "New Game" to restart and pick a new difficulty.</p>
+        </div>
+        </div>
+            <script src="./script.js"></script>
+    </body>
+</html>

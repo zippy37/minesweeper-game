@@ -1,0 +1,147 @@
+:root {
+    --bg-light: rgb(240,240,250);
+    --bg-darker: rgb(100,80,110);
+    --bg-darkest: rgb(50, 40, 70);
+    --bg-purple: rgb(30,20,50);
+  }
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: var(--bg-light);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+h1 {
+    margin-left: -150px;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    border: 3px double var(--bg-purple);
+    border-radius: 20px;
+    width: 1000px;
+    height: 900px;
+}
+
+.game-window {
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    display: flex;
+}
+
+#timer {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.instruction-div {
+    margin: 20px auto;
+    margin-left: -120px;
+    display: flex;
+    justify-content: center;
+}
+
+.instructions {
+    font-size: 22px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+#easy-button, #medium-button, #hard-button, #restart-button {
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+}
+
+#board {
+    width: 600px;
+    height: 600px;
+    border: 10px solid darkgray;
+    background-color: lightgray;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board div {
+    width: 73px;
+    height: 73px;
+    border: 1px solid whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flag-button {
+    position: absolute;
+    top: 500px;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.tile-clicked {
+    background-color: darkgray;
+}
+
+.x1 {
+    color: blue;
+}
+
+.x2 {
+    color: green;
+}
+
+.x3 {
+    color: red;
+}
+
+.x4 {
+    color: navy;
+}
+
+.x5 {
+    color: brown;
+}
+
+.x6 {
+    color: teal;
+}
+
+.x7 {
+    color: black;
+}
+
+.x8 {
+    color: gray;
+}
