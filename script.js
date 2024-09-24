@@ -42,14 +42,14 @@ const changeDifficulty = (difficulty) => {
     if (difficulty === 1) {
         rows = 8;
         columns = 8;
-        minesCount = 10;
+        minesCount = 5;
         boardSetUp();
     }
 
     else if (difficulty === 2) {
         rows = 12;
         columns = 12;
-        minesCount = 25;
+        minesCount = 20;
         boardSetUp()
         document.querySelectorAll("#board div").forEach((e)=> {
             e.style.width = "48px"
@@ -67,6 +67,7 @@ const changeDifficulty = (difficulty) => {
             e.style.height = "35.5px"
         });
     }
+    tilesClicked = 0;
     currentTime = 0;
     timeCount.innerText = "0";
     gameOver = false;
@@ -265,7 +266,7 @@ function checkMine(r, c) {
         checkMine(r + 1, c + 1); // bottom right   
     }
 
-    if (tilesClicked == rows * columns - minesCount) {
+    if (tilesClicked === rows * columns - minesCount) {
         document.querySelector("h1").innerText = "YOU WIN";
         document.querySelector("h1").style.color = "green";
         gameOver = true;
